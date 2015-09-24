@@ -1,0 +1,65 @@
+###################### App Metadata ######################
+# 
+
+default_language "en-US"
+
+title(
+  "en-US" => "newFL"
+)
+
+# More options: https://github.com/KrauseFx/deliver/blob/master/Deliverfile.md
+
+###################### Screenshots ######################
+# Store all screenshots in the ./screenshots folder separated
+# by language. If you use snapshot, this happens automatically
+
+###################### IPA File ######################
+# This part is only relevant, if you want to submit a new binary
+# If you don't use fastlane (https://github.com/KrauseFx/fastlane)
+# you can set the path to your ipa file using:
+# ipa "./newfl.ipa"
+
+# to provide an ipa file for TestFlight distribution, use beta_ipa 
+# beta_ipa "./app.ipa"
+
+# The version of your app - remove this if you provide an ipa file
+version "1.0"
+
+###################### More Options ######################
+# If you want to have even more control, check out the documentation
+# https://github.com/KrauseFx/deliver/blob/master/Deliverfile.md
+
+copyright "#{Time.now.year} Shoppening"
+
+automatic_release false
+
+app_review_information(
+  first_name: "Kornthip",
+  last_name: "Leeleng",
+  phone_number: "+66851306464",
+  email_address: "developer@shoppening.com"
+)
+
+primary_category "Business"
+secondary_category "Games"
+secondary_subcategories ["Educational", "Puzzle"]
+
+# app_icon './iconapp_1024.png'
+
+description "newFL desc"
+
+price_tier 0
+
+keywords(
+  "en-US" => ["Keyword1", "Keyword2"]
+)
+support_url "http://www.shoppening.com"
+
+ratings_config_path './rating_config.json'
+
+###################### Automatically generated ######################
+# Feel free to remove the following lines if you use fastlane
+
+app_identifier "com.shoppening.newfl" # The bundle identifier of your app
+apple_id "1035509931" # This is NOT your Apple login ID, but the App ID of your app
+email "apple.developer@shoppening.com" # the login email address
